@@ -13,7 +13,7 @@ const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser())
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://birthday-collection.onrender.com/',
     credentials: true, 
 }));
 mongoose.connect(process.env.MONGO_URI)
